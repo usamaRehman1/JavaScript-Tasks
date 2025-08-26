@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.5/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main_container">
+
+        <div id="startPannel">
+            <img src="./assets/logo.png" width="250" height="150">
+            <h1>Dice Roll Game</h1>
+            <div class="btn_container">
+                <button id="startBtn" onclick="gameStart()">START</button>
+            </div>
+        </div>
+
+        <div id="tossPannel">
+            <div class="players_container">
+                <h2 id="player1"></h2>
+                <h2 id="player2"></h2>
+            </div>
+            <div class="toss_conatiner">
+                <img class="tossImg" src="./assets/dice1.png">
+                <div>
+                    <button id="tossBtn" onclick="toss()">Toss</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="gamePannel">
+            <h1 class="currPlayer">Player One, it's your turn</h1>
+            <div class="dice">
+                <img class="dice1" src="./assets/dice6.png" alt="dice1">
+                <img class="dice2" src="./assets/dice6.png" alt="dice1">
+            </div>
+            <div class="btn">
+                <button id="rollTheDiceBtn" onclick="rollTheDice()">Roll The Dice</button>
+            </div>
+        </div>
+
+        <div id="gameResult">
+            <h1 id="result">Game Draw</h1>
+            <div class="finalDices">
+                <img class="finalDices1" src="./assets/dice6.png" alt="dice1">
+                <img class="finalDices2" src="./assets/dice6.png" alt="dice1">
+            </div>
+            <button id="reStartBtn" onclick="window.location.reload()">RE START</button>
+        </div>
+    </div>
+
+    <script src="dice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.5/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

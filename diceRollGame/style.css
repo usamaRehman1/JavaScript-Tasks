@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main_container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #660B05;
+}
+
+#startPannel,
+#tossPannel,
+#gamePannel,
+#gameResult {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    line-height: 50px;
+    width: 50%;
+    border: 1px solid #660B05;
+    border-radius: 10px;
+    background-color: #FFF0C4;
+
+}
+
+#startPannel {
+    display: block;
+}
+
+#startPannel h1 {
+    font-size: 50px;
+    color: #660B05;
+
+}
+
+#startBtn,
+#tossBtn,
+#rollTheDiceBtn,
+#reStartBtn {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    letter-spacing: 0.2em;
+    border: 1px solid #660B05;
+    background-color: #660B05;
+    color: #FFF0C4;
+}
+
+#startBtn:hover,
+#tossBtn:hover,
+#rollTheDiceBtn:hover,
+#reStartBtn:hover {
+    background-color: #FFF0C4;
+    border: 1px solid #660B05;
+    color: #660B05;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#tossPannel {
+    display: none;
+}
+
+#gamePannel {
+    display: none;
+}
+
+#gamePannel .dice,
+#gameResult .finalDices {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+#gameResult {
+    display: none;
+}
+
+/* Media curies handling */
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+
+    #startPannel,
+    #tossPannel,
+    #gamePannel,
+    #gameResult {
+        padding: 30px;
+        width: 80%;
+    }
+
+    #startPannel h1 {
+        font-size: 30px;
+
+    }
+
+    #gamePannel .dice,
+    #gameResult .finalDices {
+        position: relative;
+        left: -44px;
+        gap: 20px;
+    }
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    
+    #startPannel,
+    #tossPannel,
+    #gamePannel,
+    #gameResult {
+        padding: 30px;
+        width: 70%;
+    }
+
+    #startPannel h1 {
+        font-size: 40px;
+    }
+}
+
+/* Normal */
+/* @media(min-width: 769px) and (max-width: 1200px) {} */
+
+/* Widescreen */
+/* @media(min-width: 1201px) {} */
+
+/* Landscape */
+/* @media(max-height: 500px) {} */
