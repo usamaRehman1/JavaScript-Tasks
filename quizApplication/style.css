@@ -1,0 +1,229 @@
+body {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, #1C352D 0%, #CADCAE 50%, #E1E9C9 100%);
+}
+
+#start_container {
+    display: block;
+    text-align: center;
+    margin-top: 40vh !important;
+}
+
+.card-title {
+    font-family: "Roboto Mono", monospace;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color: #1C352D;
+}
+
+#startBtn,
+#nextQueBtn,
+#tryAgainBtn,
+#homeBtn {
+    border: none;
+    background-color: #1C352D;
+    color: #E1E9C9;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: 0.2s all;
+}
+
+#startBtn:hover,
+#nextQueBtn:hover,
+#tryAgainBtn:hover,
+#homeBtn:hover {
+    background-color: #2b4d42;
+}
+
+#question_continer {
+    display: none;
+    margin-top: 10vh !important;
+}
+
+.showQue {
+    background-color: #1C352D;
+    color: #fff;
+    height: 250px;
+    width: 100%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.showQue #header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 10px;
+    color: #E1E9C9;
+}
+
+.showQue #que {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #E1E9C9;
+}
+
+#question_continer .options_container {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+
+.options_container ul>li {
+    list-style: none;
+    width: 100%;
+    background-image: radial-gradient(#FFF, #E1E9C9);
+    color: #797E85;
+    height: 70px;
+    border-radius: 15px;
+    margin: 5px auto;
+}
+
+.options_container ul>li:hover {
+    cursor: pointer;
+    background-image: radial-gradient(#1C352D);
+    border: 1px solid #fff;
+    color: #E1E9C9;
+}
+
+.selected {
+    background-image: radial-gradient(#1C352D) !important;
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+#nextQueBtn {
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#result_container {
+    display: none;
+    text-align: center;
+    margin-top: 10vh !important;
+}
+
+#result_header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: rgb(14, 70, 70);
+    letter-spacing: 2px;
+}
+
+#result_box {
+    width: 100%;
+    height: 350px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#result_box table {
+    width: 80%;
+    height: 300px;
+    border-collapse: collapse;
+    margin: 30px 60px;
+}
+
+#result_box table td {
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #000000;
+    width: 40%;
+    text-align: left;
+}
+
+/* Media curies handling */
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+
+    /* ---- Start Container ---- */
+    #start_container {
+        margin-top: 25vh !important;
+        width: 80% !important;
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+
+    /* ------- Question Container ----- */
+    #question_continer {
+        width: 90% !important;
+    }
+
+    .showQue #header {
+        font-size: 20px;
+        padding: 3px;
+    }
+
+    .showQue #que {
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /* ---------- Result Container ------ */
+    #result_container {
+        width: 90% !important;
+    }
+
+    #result_box table {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+
+      /* ---- Start Container ---- */
+    #start_container {
+        width: 60% !important;
+    }
+
+    .card-title {
+        font-size: 40px;
+    }
+
+    /* ------- Question Container ----- */
+    #question_continer {
+        width: 80% !important;
+    }
+
+    .showQue #header {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .showQue #que {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* ---------- Result Container ------ */
+    #result_container {
+        width: 90% !important;
+    }
+
+    #result_box table {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+/* Normal */
+/* @media(min-width: 769px) and (max-width: 1200px) {} */
+
+/* Widescreen */
+/* @media(min-width: 1201px) {} */
+
+/* Landscape */
+/* @media(max-height: 500px) {} */
