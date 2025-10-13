@@ -94,6 +94,12 @@ const arrayProcess = (cb, numArr) => {
     return check.trim()
 }
 
-const number = +prompt("Enter Number");
-const numToWord = arrayProcess(inWordCounting, number.toString().split(""))
-alert(numToWord)
+const processButton = document.getElementById("processButton");
+
+processButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const numInput = +document.getElementById("textInput").value;
+    const numToWord = arrayProcess(inWordCounting, numInput.toString().split(""))
+    document.getElementById("numberWordsDisplay").innerText = `${numToWord}`
+    document.getElementById("textInput").value = ''
+})
