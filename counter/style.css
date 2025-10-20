@@ -1,0 +1,56 @@
+/* Basic Reset and Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* The Main Counter Container */
+.counter-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* The Counter Display */
+.counter-display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333;
+    padding: 0 20px;
+    min-width: 60px;
+    text-align: center;
+    user-select: none;
+}
+
+/* The Counter Buttons */
+.counter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    min-width: 50px;
+}
+
+/* Button Hover Effect */
+.counter-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Button Active/Click Effect */
+.counter-btn:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
